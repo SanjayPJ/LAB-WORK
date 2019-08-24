@@ -37,9 +37,7 @@ void main()
 								
 			case 3: printf("\nEnter name of the Directory:\t");
 					scanf("%s",d);
-					for(i=0;i<dcnt;i++)			// i will be incremented to dcnt but won't enter loop
-					 
-											/* i = 0 first and increments till i < dcnt and enter loop that many times 
+					for(i=0;i<dcnt;i++)	/* i = 0 at first and increments till i < dcnt and enter loop that many times 
 											and when it increments to i = dcnt it won't enter loop */
 						if(strcmp(d,dir[i].dname)==0)
 						{							
@@ -87,7 +85,7 @@ void main()
 						}
 					}
 					printf("Directory %s doesn't Exist!'",d);
-					jmp : break;							// goes to this break statement otherwise it will loop
+					jmp : break;				// goes to this break statement otherwise it will loop
 			case 2: printf("\nEnter name of the directory:\t");
 					scanf("%s",d);
 					for(i=0;i<dcnt;i++)
